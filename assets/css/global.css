@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #B9001f
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.s-menu {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.s-menu__item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 1.25rem;
+}
+
+.s-menu__icon {
+    width: 2.5rem;
+    vertical-align: middle;
+}
