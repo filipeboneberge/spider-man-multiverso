@@ -15,13 +15,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .s-wrapper .s-main-content{
   height: 100%;
   width: 100%;
-  padding-left: 30px;
+  padding-left: 130px;
   background-color: gray;
 }
 
+.s-wrapper .s-main-content__top {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content__bottom {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.s-wrapper .s-main-content__top .s-logo img {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
