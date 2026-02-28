@@ -28,7 +28,6 @@
   height: 100%;
   width: 100%;
   padding-left: 130px;
-  background-color: gray;
 }
 
 .s-wrapper .s-main-content__top {
@@ -75,4 +74,11 @@
 
 .s-wrapper .s-main-content .s-links ul {
   display: flex;
+}
+
+/* BACKGROUND */
+
+.s-spiderman-01-01 {
+  background-image: url("../images/spiderman-tobey/movie-01/background.png");
+  background-size: cover;
 }

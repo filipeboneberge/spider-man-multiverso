@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../css/internal.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
     <title>Spider-Man | Tobey Maguire</title>
 </head>
 
@@ -28,7 +30,7 @@
 
         </div>
 
-        <div class="s-main-content">
+        <div class="s-main-content s-spiderman-01-01">
             <div class="s-main-content__top">
                 <div class="s-logo">
                     <img src="../../images/spiderman-tobey/movie-01/logo.png" alt="Spider-Man (2002)"
@@ -69,17 +71,48 @@
             <div class="s-main-content__bottom">
                 <div class="gallery">
                     <ul>
-                        <li><a href="#"><img src="../../images/spiderman-tobey/movie-01/gallery/image-01.png"
+                        <li><a data-fancybox="gallery"
+                                href="../../images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"><img
+                                    src="../../images/spiderman-tobey/movie-01/gallery/image-01.png"
                                     alt="imagem galeria 01"></a></li>
-                        <li><a href="#"><img src="../../images/spiderman-tobey/movie-01/gallery/image-02.png"
+                        <li><a data-fancybox="gallery"
+                                href="../../images/spiderman-tobey/movie-01/gallery/image-02-full.jpg"><img
+                                    src="../../images/spiderman-tobey/movie-01/gallery/image-02.png"
                                     alt="imagem galeria 02"></a></li>
-                        <li><a href="#"><img src="../../images/spiderman-tobey/movie-01/gallery/image-03.png"
+                        <li><a data-fancybox="gallery"
+                                href="../../images/spiderman-tobey/movie-01/gallery/image-03-full.jpg"><img
+                                    src="../../images/spiderman-tobey/movie-01/gallery/image-03.png"
                                     alt="imagem galeria 03"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            mainStyle: {
+                "--f-toolbar-padding": "16px 32px",
+                "--f-toolbar-gap": "8px",
+                "--f-button-border-radius": "50%",
+                "--f-thumb-width": "82px",
+                "--f-thumb-height": "82px",
+                "--f-thumb-opacity": "0.5",
+                "--f-thumb-hover-opacity": "1",
+                "--f-thumb-selected-opacity": "1",
+            },
+            Carousel: {
+                Toolbar: {
+                    display: {
+                        left: ["counter"],
+                        middle: ["zoomIn", "zoomOut"],
+                        right: ["download", "thumbs", "close"],
+                    },
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
